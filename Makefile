@@ -12,6 +12,10 @@ test-selection-sort: ./tests/selectionSort.c
 	gcc ./tests/selectionSort.c -o selectionSort 
 	selectionSort
 
+test-bubble-sort: ./tests/bubbleSort.c
+	gcc ./tests/bubbleSort.c -o bubbleSort 
+	bubbleSort
+
 clean:
 	@echo "Starting clean..."
 	del *.o *.exe
