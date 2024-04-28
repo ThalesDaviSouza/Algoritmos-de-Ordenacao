@@ -7,8 +7,9 @@ main.o: main.c
 sorting.o: ./src/sorting.c ./include/sorting.h
 	gcc -c .\src\sorting.c
 
-test-selection-sort:
-	gcc ./tests/selectionSort.c -o selectionSort && selectionSort
+test-selection-sort: ./tests/selectionSort.c
+	gcc ./tests/selectionSort.c -o selectionSort 
+	selectionSort
 
 clean:
 	@echo "Starting clean..."
