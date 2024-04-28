@@ -10,7 +10,7 @@ int main(int argc, char** argv){
     printf("Unsorted array:\n");
     PrintVect(vect, vectLength);
 
-    SelectionSort(vect, vectLength);
+    BubbleSort(vect, vectLength);
 
     printf("Sorted array:\n");
     PrintVect(vect, vectLength);

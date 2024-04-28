@@ -1,5 +1,6 @@
 output: main.o sorting.o
 	gcc main.o sorting.o -o output
+	output
 
 main.o: main.c
 	gcc -c main.c
