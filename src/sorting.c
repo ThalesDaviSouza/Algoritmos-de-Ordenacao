@@ -46,8 +46,6 @@ int arrayIsSorted(int* vect, int length){
 }
 
 void BubbleSort(int* vect, int length){
-    int posI;
-    int posj;
     int aux;
 
     do{
@@ -59,5 +57,40 @@ void BubbleSort(int* vect, int length){
             }
         }
     }while(!arrayIsSorted(vect, length));
+
+}
+
+void InsertionSort(int* vect, int length){
+    int posI;
+    int posJ;
+    int aux;
+
+    for(int i = 0; i <= length -2; i++){
+        if(vect[i] > vect[i+1]){
+            aux = vect[i];
+            vect[i] = vect[i+1];
+            vect[i+1] = aux;
+            
+            posI = i-1;
+            posJ = i;
+            
+            if(posI >= 0){
+                while(vect[posI] > vect[posJ]){
+                    aux = vect[posI];
+                    vect[posI] = vect[posJ];
+                    vect[posJ] = aux;
+
+                    posI--;
+                    posJ--;
+
+                    if(posI < 0 || posJ < 0){
+                        break;
+                    }
+                    
+                }
+            }
+        }
+
+    }
 
 }

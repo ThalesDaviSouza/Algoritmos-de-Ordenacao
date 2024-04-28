@@ -9,5 +9,6 @@ void BubbleSort(int* vect, int length);
 
 int arrayIsSorted(int* vect, int length);
 
+void InsertionSort(int* vect, int length);
 
 #endif
